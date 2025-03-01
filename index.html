@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>José Alex - Página Pessoal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Estilos para o botão de alternar background */
+      .toggle-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #6e48aa;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .toggle-button:hover {
+        background-color: #9d50bb;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="background"></canvas>
+
+    <div class="container">
+      <h1>Olá, me chamo</h1>
+      <span class="name">José Alex</span>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/allex_v4/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://github.com/Allexv4"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Botão para alternar o background -->
+    <button class="toggle-button" onclick="toggleBackground()">
+      Alternar Background
+    </button>
+
+    <!-- Referência ao arquivo JavaScript externo -->
+    <script src="script.js"></script>
+  </body>
+</html>
